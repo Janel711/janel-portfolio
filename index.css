@@ -89,7 +89,7 @@ body {
 
 .header {
   min-height: 100vh;
-  background: #fffafd;
+  background: #E969BA;
 }
 
 .header__text-box {
@@ -166,7 +166,7 @@ section h2 {
 ========================= */
 
 .about {
-  background: #ffffff;
+  background: #F19CD1;
 }
 
 .about__content {
@@ -200,7 +200,7 @@ section h2 {
 ========================= */
 
 .about__photo-container {
-  width: 320px;
+  width: 300px;
   flex-shrink: 0;
 }
 
@@ -221,7 +221,7 @@ section h2 {
 ========================= */
 
 .work {
-  background: #fffafd;
+  background: #DB2095;
   min-height: 45vh;
 }
 
