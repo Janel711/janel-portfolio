@@ -1,4 +1,30 @@
 /* =========================
+   FONTS
+========================= */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+/* =========================
    GENERAL
 ========================= */
 
@@ -14,10 +40,10 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
   background: #fffafd;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .row {
@@ -34,21 +60,22 @@ body {
 .nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 2.5rem 0;
 }
 
 .nav__items {
   display: flex;
-  gap: 3rem;
+  gap: 3.5rem;
   list-style: none;
 }
 
 .nav__link {
   text-decoration: none;
-  color: #333;
+  color: #333333;
   font-size: 1.5rem;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .nav__link:hover {
@@ -77,27 +104,39 @@ body {
 
 .heading-primary {
   font-size: 5.5rem;
-  line-height: 1.1;
+  line-height: 1.15;
   margin-bottom: 2rem;
-  color: #222;
+  color: #222222;
+  font-weight: 600;
 }
 
 .header__text p {
-  font-size: 1.8rem;
-  color: #777;
-  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #777777;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
 }
+
+
+/* =========================
+   BUTTON
+========================= */
 
 .btn {
   display: inline-block;
   margin-top: 2rem;
   padding: 1.2rem 2.5rem;
+
   background: #e88eb2;
-  color: white;
+  color: #ffffff;
+
   text-decoration: none;
   border-radius: 4px;
-  font-size: 1.5rem;
-  transition: 0.3s;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -107,7 +146,7 @@ body {
 
 
 /* =========================
-   SECTION
+   SECTIONS
 ========================= */
 
 section {
@@ -117,7 +156,8 @@ section {
 section h2 {
   font-size: 4rem;
   margin-bottom: 5rem;
-  color: #222;
+  color: #222222;
+  font-weight: 600;
 }
 
 
@@ -133,7 +173,7 @@ section h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 6rem;
+  gap: 7rem;
 }
 
 .about__text {
@@ -141,16 +181,23 @@ section h2 {
 }
 
 .about__text h3 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #333333;
+  font-weight: 500;
 }
 
 .about__text p {
-  font-size: 1.6rem;
-  color: #666;
+  font-size: 1.5rem;
+  color: #666666;
   margin-bottom: 1.5rem;
+  font-weight: 400;
 }
+
+
+/* =========================
+   ABOUT ME PHOTO
+========================= */
 
 .about__photo-container {
   width: 320px;
@@ -160,29 +207,12 @@ section h2 {
 .about__photo {
   width: 100%;
   height: 400px;
+
   object-fit: cover;
-  border-radius: 8px;
-}
 
+  border-radius: 10px;
 
-/* =========================
-   SKILLS
-========================= */
-
-.work__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  list-style: none;
-  margin-top: 2rem;
-}
-
-.work__list li {
-  padding: 0.7rem 1.5rem;
-  border: 1px solid #e8a5c1;
-  border-radius: 20px;
-  color: #c85d88;
-  font-size: 1.3rem;
+  display: block;
 }
 
 
@@ -192,7 +222,7 @@ section h2 {
 
 .work {
   background: #fffafd;
-  min-height: 40vh;
+  min-height: 45vh;
 }
 
 .work .row {
@@ -206,14 +236,50 @@ section h2 {
 
 .footer {
   padding: 3rem 0;
+
   background: #ffffff;
+
   border-top: 1px solid #f1dce5;
+
   text-align: center;
 }
 
 .footer p {
-  color: #888;
+  color: #888888;
   font-size: 1.3rem;
+}
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-to-top {
+  position: fixed;
+
+  bottom: 2rem;
+  right: 2rem;
+
+  width: 4rem;
+  height: 4rem;
+
+  background: #e88eb2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  transition: 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #d96b98;
+}
+
+.back-to-top__image {
+  width: 1.8rem;
 }
 
 
@@ -222,6 +288,8 @@ section h2 {
 ========================= */
 
 @media (max-width: 700px) {
+
+  /* Navigation */
 
   .nav {
     justify-content: center;
@@ -235,13 +303,32 @@ section h2 {
     font-size: 1.3rem;
   }
 
+
+  /* Home */
+
   .heading-primary {
     font-size: 4rem;
   }
 
+  .header__text {
+    text-align: center;
+  }
+
+  .header__text-box {
+    justify-content: center;
+  }
+
+
+  /* About */
+
   .about__content {
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .about__text {
+    width: 100%;
   }
 
   .about__photo-container {
@@ -253,6 +340,9 @@ section h2 {
     height: 380px;
   }
 
+
+  /* Sections */
+
   section {
     padding: 7rem 0;
   }
@@ -260,4 +350,5 @@ section h2 {
   section h2 {
     font-size: 3.2rem;
   }
+
 }
