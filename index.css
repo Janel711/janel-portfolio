@@ -826,3 +826,29 @@ body {
         height: 340px;
     }
 }
+
+/* =====================================================
+   SCHOOL WORK IMAGE
+===================================================== */
+
+.school-work__image {
+    display: block;
+
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 25px rgba(92, 20, 54, 0.20);
+
+    transition: all 0.3s ease;
+}
+
+.school-work__image:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(92, 20, 54, 0.28);
+}
