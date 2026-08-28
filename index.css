@@ -834,8 +834,8 @@ body {
 .school-work__image {
     display: block;
 
-    width: 250px;
-    max-width: 70%;
+    width: 200px;
+    max-width: 50%;
     height: auto;
 
     border-radius: 15px;
