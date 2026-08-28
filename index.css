@@ -852,3 +852,7 @@ body {
     box-shadow:
         0 15px 30px rgba(92, 20, 54, 0.28);
 }
+.school-work_label {
+   front-size: 1.8rem;
+   margin-bottom: 1rem;
+}
