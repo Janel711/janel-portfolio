@@ -865,16 +865,6 @@ body {
     max-width: none !important;
     height: auto;
 }
-/* Quiz 3 */
-.quiz3-label {
-    margin-top: 40px;
-}
-
-.quiz3-image {
-    width: 500px;
-    max-width: 100%;
-    height: auto;
-}
 
 /* Image Hover */
 .school-work__image:hover {
@@ -888,4 +878,14 @@ body {
 .school-work_label {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+}
+/* Quiz 3 */
+.quiz3-label {
+    margin-top: 40px;
+}
+
+.quiz3-image {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
 }
