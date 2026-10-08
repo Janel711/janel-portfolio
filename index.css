@@ -868,18 +868,24 @@ body {
     width: 300px;
 }
 
-/* Quiz 2 and Quiz 3 - SAME SIZE */
+/* Quiz 2, Quiz 3, and Long Quiz - SAME SIZE */
 .quiz2-image,
-.quiz3-image {
+.quiz3-image,
+.long-quiz-image {
     width: 600px;
     max-width: 100%;
+    height: auto;
 }
 
-/* Space between Quiz 2 and Quiz 3 */
+/* Quiz 3 */
 .quiz3-label {
     margin-top: 40px;
 }
 
+/* Long Quiz */
+.long-quiz-label {
+    margin-top: 40px;
+}
 /* Hover */
 .school-work__image:hover {
     transform: translateY(-5px);
