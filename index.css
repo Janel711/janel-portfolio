@@ -847,7 +847,7 @@ body {
 .school-work__image {
     display: block;
     width: 300px;
-    max-width: 100%;
+    max-width: 200%;
     height: auto;
     margin-bottom: 15px;
     border-radius: 15px;
