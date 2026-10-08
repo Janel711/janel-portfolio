@@ -868,20 +868,16 @@ body {
     width: 300px;
 }
 
-/* Quiz 2 */
-.quiz2-image {
-    width: 600px;
-    max-width: 100%;
-}
-
-/* Quiz 3 */
-.quiz3-label {
-    margin-top: 40px;
-}
-
+/* Quiz 2 and Quiz 3 - SAME SIZE */
+.quiz2-image,
 .quiz3-image {
     width: 600px;
     max-width: 100%;
+}
+
+/* Space between Quiz 2 and Quiz 3 */
+.quiz3-label {
+    margin-top: 40px;
 }
 
 /* Hover */
