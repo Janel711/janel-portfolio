@@ -852,22 +852,22 @@ body {
     box-shadow:
         0 15px 30px rgba(92, 20, 54, 0.28);
    
+}
+.school-work_label {
+   front-size: 1.8rem;
+   margin-bottom: 1rem;
+}
 .school-work__image {
     width: 300px;
     max-width: 100%;
     height: auto;
     border-radius: 15px;
 }
-}
-.school-work_label {
-   front-size: 1.8rem;
-   margin-bottom: 1rem;
-}
 .school-works-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 50px;
     align-items: flex-start;
 }
 
