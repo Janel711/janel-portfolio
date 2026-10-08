@@ -856,27 +856,15 @@ body {
    front-size: 1.8rem;
    margin-bottom: 1rem;
 }
-.school-work__image {
-    display: block;
-
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-
-    border-radius: 15px;
-
-    box-shadow:
-        0 10px 25px rgba(92, 20, 54, 0.20);
-
-    transition: all 0.3s ease;
-}
 .school-works-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
     align-items: flex-start;
 }
 
 .school-work {
-    width: 300 px;
+    width: 300px;
+    flex: 0 0 300px;
 }
