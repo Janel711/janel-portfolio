@@ -831,13 +831,24 @@ body {
    SCHOOL WORK IMAGE
 ===================================================== */
 
+.school-works-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.school-work {
+    width: 300px;
+    flex: 0 0 300px;
+}
+
 .school-work__image {
     display: block;
-
-    width: 200px;
-    max-width: 50%;
+    width: 300px;
+    max-width: 100%;
     height: auto;
-
     border-radius: 15px;
 
     box-shadow:
@@ -851,24 +862,9 @@ body {
 
     box-shadow:
         0 15px 30px rgba(92, 20, 54, 0.28);
-   
 }
+
 .school-work_label {
-   front-size: 1.8rem;
-   margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
-.school-work__image {
-    width: 500px;
-    max-width: 200%;
-    height: auto;
-    border-radius: 15px;
-}
-.school-works-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 70px;
-    align-items: flex-start;
-}
-
-
