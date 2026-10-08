@@ -843,21 +843,12 @@ body {
     width: 300px;
     flex: 0 0 300px;
 }
-/* Quiz 2 */
-.school-work:nth-child(2) {
-    width: 500px;
-    flex: 0 0 500px;
-}
 
-.school-work:nth-child(2) .school-work__image {
-    width: 500px;
-    max-width: 100%;
-}
-
+/* School Work Images */
 .school-work__image {
     display: block;
     width: 300px;
-    max-width: 200%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -868,7 +859,14 @@ body {
     transition: all 0.3s ease;
 }
 
-   
+/* Quiz 2 - Bigger Image */
+.quiz2-image {
+    width: 600px !important;
+    max-width: none !important;
+    height: auto;
+}
+
+/* Image Hover */
 .school-work__image:hover {
     transform: translateY(-5px);
 
@@ -876,6 +874,7 @@ body {
         0 15px 30px rgba(92, 20, 54, 0.28);
 }
 
+/* Quiz Title */
 .school-work_label {
     font-size: 1.8rem;
     margin-bottom: 1rem;
