@@ -868,6 +868,17 @@ body {
     width: 300px;
 }
 
+/* Midterms Exam */
+.midterms-label {
+    margin-top: 40px;
+}
+
+.midterms-image {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Quiz 2, Quiz 3, and Long Quiz - SAME SIZE */
 .quiz2-image,
 .quiz3-image,
