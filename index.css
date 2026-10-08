@@ -834,21 +834,25 @@ body {
 .school-works-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
     align-items: flex-start;
+    gap: 40px;
 }
 
+/* LEFT COLUMN - QUIZ 1 */
 .school-work {
     width: 300px;
     flex: 0 0 300px;
 }
 
-/* School Work Images */
+/* RIGHT COLUMN - QUIZ 2 + QUIZ 3 */
+.quiz-right-column {
+    width: 600px;
+    flex: 0 0 600px;
+}
+
+/* All school work images */
 .school-work__image {
     display: block;
-    width: 300px;
-    max-width: 100%;
     height: auto;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -859,26 +863,17 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Quiz 2 - Bigger Image */
+/* Quiz 1 images */
+.school-work:not(.quiz-right-column) .school-work__image {
+    width: 300px;
+}
+
+/* Quiz 2 */
 .quiz2-image {
-    width: 600px !important;
-    max-width: none !important;
-    height: auto;
+    width: 600px;
+    max-width: 100%;
 }
 
-/* Image Hover */
-.school-work__image:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 15px 30px rgba(92, 20, 54, 0.28);
-}
-
-/* Quiz Title */
-.school-work_label {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
 /* Quiz 3 */
 .quiz3-label {
     margin-top: 40px;
@@ -887,5 +882,18 @@ body {
 .quiz3-image {
     width: 500px;
     max-width: 100%;
-    height: auto;
+}
+
+/* Hover */
+.school-work__image:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(92, 20, 54, 0.28);
+}
+
+/* Quiz titles */
+.school-work_label {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
