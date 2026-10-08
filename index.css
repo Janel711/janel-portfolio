@@ -851,6 +851,13 @@ body {
 
     box-shadow:
         0 15px 30px rgba(92, 20, 54, 0.28);
+   
+.school-work__image {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
 }
 .school-work_label {
    front-size: 1.8rem;
@@ -864,14 +871,4 @@ body {
     align-items: flex-start;
 }
 
-.school-work {
-    width: 300px;
-    flex: 0 0 300px;
-}
 
-.school-work__image {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
